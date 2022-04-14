@@ -143,7 +143,7 @@ header{
 /****** Section 2.Tech ******/
 
 #tech{
-    height: 500px;
+    height: 550px;
     background-color: white;
     position: relative;
 
@@ -164,7 +164,7 @@ header{
 
 .tech_box{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
@@ -175,6 +175,7 @@ header{
 .tech_box .js, .tech_box .react, .tech_box .node{
     box-shadow:2px 3px 5px 0px;
     margin-top: 50px;
+    width: 200px;
     height: 300px;
     position:absolute;
 
@@ -214,3 +215,70 @@ header{
     padding-left: 25px;
     font-size: 100px;
 }
+
+.tech_box .js_text p, .tech_box .react_text p, .tech_box .node_text p{
+  
+    padding-right: 8px;
+    width: 100%;
+}
+
+.lang{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/****** Section 3.To_Elice ******/
+
+#to{
+    height: 400px;
+
+}
+.to_container{
+    height: 400px;
+    padding: 50px 50px;
+    display: flex;
+    background-color: black;
+    
+}
+.to_container .to_elice{
+   width: 50%;
+    background-color: #EEF0F3;
+}
+
+.to_container .to_racer{
+  width:50%;
+   background-color: white;
+}
+
+.to_elice h3, .to_racer h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 12px;
+    text-align: center;
+    margin-top:10px;
+}
+
+.to_elice p, .to_racer p{
+    border: 2px solid blue;
+    padding: 5px 20px;
+    margin-top:10px;
+}
+.to_elice ul{
+    list-style: none;
+    padding-left:0;
+    font-size: 30px;
+}
+
+.to_elice ul li{
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.to_elice ul li span{
+    display: inline-block;
+    padding-left: 10px;
+
+
+}
+
