@@ -139,6 +139,15 @@ header{
     margin: 0 20px;
 }
 
+.goal_text span{
+    font-weight: bold;
+    color:blueviolet;
+} 
+
+
+.goal_text p{
+    letter-spacing: 2px;
+}
 
 /****** Section 2.Tech ******/
 
@@ -228,6 +237,8 @@ header{
 }
 
 
+
+
 /****** Section 3.To_Elice ******/
 
 #to{
@@ -289,7 +300,7 @@ header{
 
 /****** Section 4.ABOUT ME ******/
 #about{
-    height: 500px;
+    height: 600px;
 }
 
 .about_container{
@@ -385,3 +396,28 @@ header{
     margin-top: 7px;
   }
   
+
+  /****** Footer ******/
+
+.foot_container{
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+.foot_sns{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.foot_sns a{
+    text-decoration: none;
+    color: white;
+}
+.footer .text p{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
