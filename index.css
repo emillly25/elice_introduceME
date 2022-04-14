@@ -94,9 +94,10 @@ header{
 #goal{
     height: 500px;
     background-color: black;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-left: 70px;
     padding-right: 70px;
+    padding-bottom: 100px;
 }
 .goal_container{
     height: 450px;
@@ -138,3 +139,78 @@ header{
     margin: 0 20px;
 }
 
+
+/****** Section 2.Tech ******/
+
+#tech{
+    height: 500px;
+    background-color: white;
+    position: relative;
+
+}
+
+.tech_intro{
+    height: 300px;
+    background-color: black;
+}
+
+.tech_intro h3{
+    color: white;
+    margin-top: 0;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.tech_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tech_box h2{
+    text-align: center;
+}
+
+.tech_box .js, .tech_box .react, .tech_box .node{
+    box-shadow:2px 3px 5px 0px;
+    margin-top: 50px;
+    height: 300px;
+    position:absolute;
+
+}
+
+.tech_box .js{
+    left: 100px;
+}
+.tech_box .react{
+    left: 530px;
+}
+
+.tech_box .node{
+    right: 100px;
+}
+
+.tech_box .js .js_icon,.tech_box .react .react_icon,.tech_box .node .node_icon{
+    background-color: #fff;
+    /* border: 2px solid blue; */
+    padding: 20px 14px;
+    padding-bottom: 6px;
+}
+.tech_box .js i{
+    color:black;
+    padding-left: 43px;
+    font-size: 100px;
+}
+
+.tech_box .react i{
+    color:black;
+    padding-left: 35px;
+    font-size: 100px;
+}
+
+.tech_box .node i{
+    color:black;
+    padding-left: 25px;
+    font-size: 100px;
+}
