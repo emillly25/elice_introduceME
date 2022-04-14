@@ -95,8 +95,8 @@ header{
     height: 500px;
     background-color: black;
     padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .goal_container{
     height: 450px;
@@ -105,10 +105,12 @@ header{
 }
 
 .goal_container h2{
-    text-align: center;
+    text-align: right;
     margin-top:0;
-    padding-top: 15px;
-    font-size: 25px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-size: 30px;
     color:black;
 }
 
