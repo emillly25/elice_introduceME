@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5b31b338cb.js" crossorigin="anonymous"></script>
+    <!-- <script src="index.js"></script> -->
      
 </head>
 <body>
@@ -179,8 +180,31 @@
         </div>
 
     </footer> 
+<!--TOP btn-->
+<div id="btn">TOP</div>
+<script>
+    function scrollUp(e) {
+    let target = document.getElementById(e);  
+    target.addEventListener('click', function(){window.scrollTo({top:0, left:0, behavior:'smooth'})}  
+    )
+}
+scrollUp("btn");
 
 
+let aTags = document.querySelectorAll('nav a');
+for(let i = 0; i < aTags.length; i ++) {
+    aTags[i].onclick = function(e) {
+        e.preventDefault() ;
+        let target = document.querySelector(this.getAttribute('href'));
 
+        window.scrollTo({
+            'behavior': 'smooth',
+            'top': target.offsetTop
+        })
+    }
+}
+
+
+</script>
 </body>
 </html>

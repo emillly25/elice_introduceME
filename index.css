@@ -1,3 +1,8 @@
+/* html {
+    scroll-behavior: smooth;
+  } */
+
+
 body{
     margin:0;
     padding:0;
@@ -191,14 +196,14 @@ header{
 }
 
 .tech_box .js{
-    left: 100px;
+    left: 10%;
 }
 .tech_box .react{
-    left: 530px;
+    left: 43%;
 }
 
 .tech_box .node{
-    right: 100px;
+    right: 10%;
 }
 
 .tech_box .js .js_icon,.tech_box .react .react_icon,.tech_box .node .node_icon{
@@ -420,4 +425,24 @@ header{
     font-size: 10px;
     margin-bottom: 10px;
     letter-spacing: 2px;
+}
+
+  /****** Top btn ******/
+
+  #btn{
+      width: 30px;
+      height:30px;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background-color: #38393B;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: white;
+      border-radius: 10px;
+     padding: 10px 5px 0 7px;
+  }
+#btn:hover{
+    cursor: pointer;
 }
