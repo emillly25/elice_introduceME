@@ -2,8 +2,10 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+/****** navbar ******/
 .navbar{
     height: 80px;
     background-color: black;
@@ -33,4 +35,56 @@ body{
     border-radius: 4px;
 }
 
+/****** header ******/
+header{
+    width: 100%;
+    height: 500px;
+    background-color:whitesmoke;
+}
+.banner_container{
+    text-align: center;
+    font-size: 45px;
+   
+}
+.banner_container h2{
+    font-family: 'Grape Nuts', cursive;
+    padding-top: 120px;
+    margin-top:0;
+    margin-bottom: 120px;
+}
 
+.banner_container span{
+    display: inline-block;
+    margin-top:15px;
+
+
+}
+
+
+.banner_container .btn_detail{
+   background-color: black;
+   border-radius: 10px;
+   width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+} 
+
+.banner_container .btn_detail a{
+    display:inline-block;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+   
+}
+
+.banner_container .btn_detail:hover{
+  background-color: lightgrey;
+}
+
+.banner_container .btn_detail a:hover{
+    color: black;
+}
