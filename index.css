@@ -91,7 +91,7 @@ header{
 /****** Section 1.Goal ******/
 
 #goal{
-    height: 500px;
+    /* height: 500px; */
     background-color: black;
     padding-top: 100px;
     padding-left: 70px;
@@ -99,7 +99,7 @@ header{
     padding-bottom: 100px;
 }
 .goal_container{
-    height: 450px;
+    /* height: 450px; */
     background-color: white;
     
 }
@@ -115,7 +115,7 @@ header{
 }
 
 .goal_intro {
-    height: 350px;
+    /* height: 350px; */
 
     display: flex;
     justify-content: space-between;
@@ -136,6 +136,7 @@ header{
 .goal_intro .goal_text{
     width: 50%;
     margin: 0 20px;
+    background-color: white;
 }
 
 .goal_text span{
@@ -145,20 +146,21 @@ header{
 
 
 .goal_text p{
+    font-size: 1rem;
     letter-spacing: 2px;
 }
 
 /****** Section 2.Tech ******/
 
 #tech{
-    height: 550px;
+    height: 600px;
     background-color: white;
     position: relative;
 
 }
 
 .tech_intro{
-    height: 300px;
+    min-height: 300px;
     background-color: black;
 }
 
@@ -184,7 +186,7 @@ header{
     box-shadow:2px 3px 5px 0px;
     margin-top: 50px;
     width: 200px;
-    height: 300px;
+    /* height: 300px; */
     position:absolute;
 
 }
@@ -202,7 +204,6 @@ header{
 
 .tech_box .js .js_icon,.tech_box .react .react_icon,.tech_box .node .node_icon{
     background-color: #fff;
-    /* border: 2px solid blue; */
     padding: 20px 14px;
     padding-bottom: 6px;
 }
@@ -247,7 +248,7 @@ header{
 
 }
 .to_container{
-    height: 600px;
+    /* height: 600px; */
     padding: 50px 50px;
     display: flex;
     background-color: black;
@@ -506,6 +507,38 @@ header{
         display:flex;
         height: 300px;
     }
+
+   .goal_intro{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   #tech{
+       height: 1300px;
+   }
+   .tech_box{
+       flex-direction: column;
+   }
+
+   .tech_box .js, .tech_box .react, .tech_box .node{
+       position:static;
+   }
+
+   #to{
+       height: 1100px;
+   }
+   .to_container{
+       flex-direction: column;
+       align-items: center;
+   }
+   .to_elice p ,.to_racer p{
+       text-align: center;
+   }
+
+#about{
+    height:900px;
+}
 
 
 }
