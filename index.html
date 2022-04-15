@@ -23,13 +23,15 @@
             <li><a href="#to">TO-ELICE</a></li>
             <li><a href="#about">ABOUT ME</a></li>
         </ul>
-        <div class="toggle_btn"></div>
+        <a href="#" class="toggle_btn"><i class="fa-solid fa-bars"></i></a>
     </nav>
 
     <!--header-->
     <header class="banner" id="home">
         <div class="banner_container">
-            <h2>My Name is<br><span>SEHEE</span></h2>
+            <h2>My Name is<br><span style=" background: linear-gradient(to right, hotpink, #8ca6ce);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">SEHEE</span></h2>
             <div class="btn_detail"><a href="#">More</a></div>
         </div>  
     </header>
@@ -37,7 +39,7 @@
     <!--section#1 My Goal-->
     <section id="goal">
         <div class="goal_container">
-            <h2>My Goal</h2>
+            <h2>MY GOAL</h2>
             <div class="goal_intro">
                 <div class="goal_img"><img src="https://images.unsplash.com/photo-1603468620905-8de7d86b781e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80" alt="engineer"></div>
             <div class="goal_text"><h3>안녕하세요!!</h3>
@@ -72,7 +74,7 @@
                     </div>
                 </div>
                 <div class="node">
-                    <div class="node_icon"><i class="fa-brands fa-node"></i></div>
+                    <div class="node_icon"><i class="fa-brands fa-node "></i></div>
                     <div class="node_text">
                         <h2>Node JS</h2>
                         <p class="lang">Towards,<br> FULLSTACK Engineer</p> 
@@ -85,7 +87,7 @@
     <section id="to">
         <div class="to_container">
             <div class="to_elice">
-                <h3>Expectation For Elice SW</h3>
+                <h3>EXPECTATION For elice</h3>
                 <div>
                     <div class="to_content">
                         <i class="fa-solid fa-people-group"></i>
@@ -98,7 +100,7 @@
                 <h3>To. RACERS</h3>
                 <div>
                     <div class="to_content">
-                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <i class="fa-solid fa-arrow-trend-up "></i>
                         <p>Growing Together!!</p>
                     </div>
                 </div>
@@ -113,7 +115,7 @@
     <section id="about">
         <div class="about_container">
             <div class="about_intro">
-                <h3>Who Am I</h3>
+                <h3>WHO AM I</h3>
                 <p>MOUSE ON PHOTO </p>
             </div>
             <!--1번-->
@@ -186,7 +188,13 @@
     </footer> 
 <!--TOP btn-->
 <div id="btn">TOP</div>
+
+<!--toggle btn-->
+
+
+
 <script>
+    // top_btn scroll up
     function scrollUp(e) {
     let target = document.getElementById(e);  
     target.addEventListener('click', function(){window.scrollTo({top:0, left:0, behavior:'smooth'})}  
@@ -194,7 +202,7 @@
 }
 scrollUp("btn");
 
-
+// link scroll smooth
 let aTags = document.querySelectorAll('nav a');
 for(let i = 0; i < aTags.length; i ++) {
     aTags[i].onclick = function(e) {
@@ -207,6 +215,16 @@ for(let i = 0; i < aTags.length; i ++) {
         })
     }
 }
+
+//toggle
+const toggle_btn =document.querySelector('.toggle_btn');
+const menu = document.querySelector('.menu');
+const nav  = document.querySelector('.navbar');
+
+toggle_btn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    nav.classList.toggle('active');
+})
 
 
 </script>
